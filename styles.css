@@ -27,7 +27,7 @@ h4,
 h5,
 h6 {
   font-size: 100%;
-  font-weight: normal;
+  font-weight: 700;
 }
 
 ul {
@@ -65,13 +65,26 @@ iframe {
 
 /* layout */
 
+body {
+  line-height: 1.65;
+}
+
 section {
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 600px) {
   section {
-    max-width: 90vw;
-    margin: 3em auto;
+    max-width: 1880px;
+    margin: 0 auto;
+    padding: 4vw 8vw;
+  }
+
+  .video {
+    padding-top: 8vw;
+  }
+
+  .map {
+    padding-bottom: 8vw;
   }
 }
 
@@ -90,10 +103,9 @@ iframe {
   height: 100%;
 }
 
-/* sections */
-
-h3 {
-  font-weight: 700;
+/* specifics */
+h1 {
+  font-size: 2em;
 }
 
 .gallery ul {
@@ -106,7 +118,7 @@ h3 {
   width: 50%;
 }
 
-@media all and (min-width: 500px) {
+@media all and (min-width: 600px) {
   .gallery li {
     width: 33.333%;
   }
@@ -116,4 +128,12 @@ h3 {
   .gallery li {
     width: 20%;
   }
+}
+
+.information {
+}
+
+.information > * {
+  background: #f2f2f2;
+  padding: 2em;
 }
