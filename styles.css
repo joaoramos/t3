@@ -1,0 +1,119 @@
+/*! minireset.css v0.0.3 | MIT License | github.com/jgthms/minireset.css */
+html,
+body,
+p,
+ol,
+ul,
+li,
+blockquote,
+figure,
+fieldset,
+legend,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
+}
+
+ul {
+  list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img,
+embed,
+iframe,
+object,
+audio,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+iframe {
+  border: 0;
+}
+
+/* layout */
+
+section {
+}
+
+@media all and (min-width: 500px) {
+  section {
+    max-width: 90vw;
+    margin: 3em auto;
+  }
+}
+
+.iframe-holder {
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+  overflow: hidden;
+}
+
+iframe {
+  position: absolute;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* sections */
+
+h3 {
+  font-weight: 700;
+}
+
+.gallery ul {
+  overflow: hidden;
+}
+
+.gallery li {
+  line-height: 0;
+  float: left;
+  width: 50%;
+}
+
+@media all and (min-width: 500px) {
+  .gallery li {
+    width: 33.333%;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .gallery li {
+    width: 20%;
+  }
+}
