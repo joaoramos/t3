@@ -63,16 +63,22 @@ iframe {
   border: 0;
 }
 
-/* layout */
+/* Layout */
 
 body {
+  font-family: 'Asap', sans-serif;
   line-height: 1.65;
+  max-width: 1440px;
+  margin: 0 auto;
 }
 
+header,
 section {
+  padding: 1em;
 }
 
 @media all and (min-width: 600px) {
+  header,
   section {
     max-width: 1880px;
     margin: 0 auto;
@@ -80,9 +86,10 @@ section {
   }
 
   .video {
-    padding-top: 8vw;
+    padding-top: 0;
   }
 
+  .gallery,
   .map {
     padding-bottom: 8vw;
   }
@@ -103,10 +110,59 @@ iframe {
   height: 100%;
 }
 
-/* specifics */
 h1 {
-  font-size: 2em;
+  font-size: 1.3em;
 }
+
+@media all and (min-width: 600px) {
+  h1 {
+    font-size: 2em;
+  }
+}
+
+h2 {
+  font-size: 1.2em;
+  margin-bottom: .5em;
+}
+
+.button {
+  display: block;
+  text-align: center;
+  background: blue;
+  text-decoration: none;
+  color: white;
+  padding: .5em .8em;
+  margin: 1em 0;
+  border-radius: 3px;
+}
+
+/* Header */
+
+.top {
+  padding-top: 8vw;
+}
+
+.top .button {
+  margin: .5em 0;
+}
+
+@media all and (min-width: 600px) {
+
+  .top {
+    overflow: hidden;
+  }
+
+  .top h1 {
+    display: inline-block;
+  }
+
+  .top .button {
+    display: inline-block;
+    float: right;
+  }
+}
+
+/* Gallery */
 
 .gallery ul {
   overflow: hidden;
@@ -130,10 +186,42 @@ h1 {
   }
 }
 
-.information {
+/* Actions */
+
+.actions {
+  padding-top: 8vw;
 }
 
-.information > * {
+.actions-list {
+  overflow: hidden;
+}
+
+.actions-list > li {
+  margin-bottom: 2em;
+}
+
+@media all and (min-width: 600px) {
+  .actions-list > li {
+    float: left;
+    width: 50%;
+    padding-right: 2em;
+  }
+
+  .actions-list > .buttons {
+    padding-right: 0;
+  }
+}
+
+@media all and (min-width: 900px) {
+  .actions-list > li {
+    width: 25%;
+    margin-bottom: 0;
+  }
+}
+
+/* Footer */
+
+.actions,
+.map {
   background: #f2f2f2;
-  padding: 2em;
 }
